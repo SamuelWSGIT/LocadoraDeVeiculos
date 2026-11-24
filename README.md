@@ -22,7 +22,7 @@ npm ci
 npm run dev
 ```
 
-Abra o endereço exibido pelo Vite, normalmente [localhost:5173](http://localhost:5173/).
+Abra o endereço exibido pelo Vite, normalmente [LocadoraDeVeiculos](https://locadora-de-veiculos-omega.vercel.app/)].
 
 | Comando | Uso |
 | --- | --- |
