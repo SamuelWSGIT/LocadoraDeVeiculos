@@ -1,0 +1,2 @@
+﻿.page { padding-bottom: clamp(48px, 9vw, 128px); background: var(--color-surface); }
+.hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }

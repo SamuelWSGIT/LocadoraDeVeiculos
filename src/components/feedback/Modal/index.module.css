@@ -1,0 +1,4 @@
+.backdrop { position: fixed; inset: 0; z-index: 20; display: grid; padding: 1rem; place-items: center; background: rgb(29 47 64 / 55%); }
+.dialog { position: relative; width: min(100%, 480px); padding: 32px; border-radius: 8px; background: var(--color-surface); box-shadow: 0 20px 60px rgb(29 47 64 / 25%); }
+.dialog h2 { margin: 0 0 16px; color: var(--color-ink); font-family: var(--font-display); }
+.close { position: absolute; top: 12px; right: 12px; width: 32px; height: 32px; border: 0; background: transparent; color: var(--color-ink); cursor: pointer; font-size: 24px; line-height: 1; }

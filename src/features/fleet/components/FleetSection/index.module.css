@@ -1,0 +1,31 @@
+﻿.fleetSection { padding: 24px 0; background: var(--color-surface); }
+.fleetContainer { width: min(calc(100% - 32px), 648px); margin-inline: auto; }
+.filterRow { position: relative; width: fit-content; margin-bottom: 24px; color: var(--color-ink); }
+.filterRow select {
+  min-height: 43px;
+  padding: 0 42px 0 15px;
+  appearance: none;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  background: var(--color-surface);
+  color: inherit;
+  cursor: pointer;
+}
+.filterRow svg { position: absolute; inset: 50% 16px auto auto; transform: translateY(-50%); stroke: currentColor; stroke-width: 2px; pointer-events: none; }
+.fleetGrid { display: grid; gap: 16px; padding-inline: 8px; }
+.visuallyHidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+
+@media (min-width: 600px) {
+  .fleetGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); padding-inline: 0; }
+}
+
+@media (max-width: 599px) {
+  .fleetSection { padding-bottom: 38px; }
+}
+
+@media (min-width: 901px) {
+  .fleetSection { padding: 56px 0 32px; }
+  .fleetContainer { width: min(calc(100% - 64px), 1200px); }
+  .filterRow { margin-bottom: 40px; }
+  .fleetGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 40px; padding-inline: 20px; }
+}

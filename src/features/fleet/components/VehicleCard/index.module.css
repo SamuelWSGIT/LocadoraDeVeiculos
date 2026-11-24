@@ -1,0 +1,30 @@
+﻿.card {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 4px;
+  background: var(--color-surface);
+  color: #000;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 9%);
+}
+.imageLink { display: block; background: var(--color-details); }
+.imageLink img { width: 100%; aspect-ratio: 281 / 160; object-fit: contain; }
+.info h3 { margin: 0 0 8px; font-size: 20px; font-weight: 400; }
+.info a { color: inherit; text-decoration: none; }
+.info p { margin: 0; }
+.price { margin: 6px 0 0; font-size: 20px; }
+.price strong { font: 700 25px var(--font-display); }
+.action {
+  display: grid;
+  min-height: 43px;
+  place-items: center;
+  border-radius: 4px;
+  background: var(--color-brand);
+  color: var(--color-surface);
+  text-decoration: none;
+}
+.action:hover { background: var(--color-brand-dark); }
+
+@media (min-width: 901px) {
+  .card { padding: 32px 40px; }
+}

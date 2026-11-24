@@ -1,0 +1,177 @@
+﻿.bookingSection {
+  padding: 24px 0;
+  background: var(--color-brand-dark);
+}
+
+.bookingForm {
+  display: grid;
+  gap: 24px;
+  width: min(calc(100% - 2rem), 1104px);
+  margin-inline: auto;
+}
+
+.bookingRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  min-width: 0;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 43px;
+  padding: 0 16px;
+  border: 1px solid var(--color-surface);
+  border-radius: 4px;
+  color: var(--color-surface);
+  font-size: 16px;
+  cursor: text;
+}
+
+.locationField {
+  grid-column: 1 / -1;
+}
+
+.icon,
+.chevron {
+  flex: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.chevron {
+  position: absolute;
+  inset-inline-end: 16px;
+  pointer-events: none;
+}
+
+.field input {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 41px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  color-scheme: dark;
+}
+
+.field input::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.field:focus-within {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.field input:focus-visible {
+  outline: none;
+}
+
+.picker {
+  cursor: pointer;
+}
+
+.pickerLabel {
+  position: absolute;
+  inset-inline-start: 38px;
+  pointer-events: none;
+}
+
+.timeField .pickerLabel {
+  inset-inline-start: 16px;
+}
+
+.picker:not(:focus-within) input[type='date']:has(+ .pickerLabel),
+.timeField:not(:focus-within) input:invalid {
+  color: transparent;
+}
+
+.picker:focus-within .pickerLabel,
+.timeField:has(input:valid) .pickerLabel {
+  visibility: hidden;
+}
+
+.timeField input {
+  padding-inline-end: 14px;
+}
+
+.picker input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.submitButton {
+  min-height: 43px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--color-ink);
+  color: var(--color-surface);
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: var(--color-secondary-dark);
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+  .bookingSection {
+    padding: 40px 0;
+  }
+
+  .bookingForm {
+    width: min(calc(100% - 32px), 648px);
+    grid-template-columns: minmax(0, 1fr) 84px;
+    gap: 8px 16px;
+  }
+
+  .bookingRow {
+    grid-column: 1;
+    grid-template-columns: minmax(0, 1fr) 128px 112px;
+    gap: 8px;
+  }
+
+  .locationField {
+    grid-column: auto;
+  }
+
+  .submitButton {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 901px) {
+  .bookingForm {
+    width: min(calc(100% - 64px), 1104px);
+    gap: 16px 24px;
+  }
+
+  .bookingRow {
+    grid-template-columns: minmax(0, 1fr) 128px 128px;
+    gap: 24px;
+  }
+}

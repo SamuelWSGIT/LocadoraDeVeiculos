@@ -1,0 +1,37 @@
+﻿.card {
+  min-width: 0;
+  border-radius: 6px;
+  background: var(--color-surface);
+  box-shadow: 0 2px 16px rgb(0 0 0 / 9%);
+}
+.banner, .code, .confirmedTotal { margin: 0; padding: 24px; font: 700 clamp(25px, 4vw, 40px) var(--font-display); }
+.banner { background: var(--color-brand); color: var(--color-surface); }
+p.banner, .confirmedTotal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; }
+.code { padding-bottom: 52px; text-align: center; }
+.content { padding-inline: 24px; }
+.row { display: grid; align-content: start; gap: 6px; padding-block: 32px; border-bottom: 1px solid var(--color-text); }
+.row:last-child { border-bottom: 0; }
+.code + .content .row:first-child { border-top: 1px solid var(--color-text); }
+.rowHeading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; }
+.rowHeading h3 { margin: 0; font: 700 clamp(25px, 4vw, 32px) var(--font-display); }
+.row p, .trip { margin: 0; }
+.row .vehicle, .trip dt { font: 700 25px var(--font-display); }
+.trip > div { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.trip dd { margin: 0; }
+.priceLine { display: flex; justify-content: space-between; gap: 8px; }
+
+.row:first-child { min-height: 192px; }
+.row:nth-child(2), .row:nth-child(3) { min-height: 208px; }
+.row:nth-child(4) { min-height: 132px; }
+
+@media (min-width: 600px) {
+  .code { min-height: 178px; font-size: 40px; }
+  .confirmedTotal { font-size: clamp(32px, 5.2vw, 40px); }
+  .row:first-child { min-height: 200px; }
+  .row:nth-child(2), .row:nth-child(3) { min-height: 224px; }
+}
+
+@media (max-width: 420px) {
+  .banner, .code, .confirmedTotal { padding-inline: 16px; }
+  .content { padding-inline: 16px; }
+}
