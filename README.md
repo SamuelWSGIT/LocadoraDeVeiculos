@@ -2,12 +2,14 @@
 
 Projeto desenvolvido por **Samuel** para fins educativos. O site simula uma locadora de veículos usando React, TypeScript, Vite, React Router e CSS Modules.
 
+[![Acessar demonstração](https://img.shields.io/badge/Acessar%20demonstração-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://locadora-de-veiculos-omega.vercel.app/)
+
 ## Demonstração
 
-![Página inicial da Hermex com formulário de busca, banner e catálogo de veículos](docs/demo-home.jpg)
+[![Página inicial da Hermex com formulário de busca, banner e catálogo de veículos](docs/demo-home.jpg)](https://locadora-de-veiculos-omega.vercel.app/)
 
-1. Na [página inicial](http://localhost:5173/), filtre o catálogo por categoria ou preencha os dados de retirada e devolução para iniciar uma reserva.
-2. Em **Ver detalhes**, confira as fotos, as características e a diária do carro. Um exemplo é o [Hyundai HB20](http://localhost:5173/veiculo/hb20).
+1. Na [LocadoraDeVeiculos](https://locadora-de-veiculos-omega.vercel.app/), filtre o catálogo por categoria ou preencha os dados de retirada e devolução para iniciar uma reserva.
+2. Em **Ver detalhes**, confira as fotos, as características e a diária do carro. Um exemplo é o [Hyundai HB20](https://locadora-de-veiculos-omega.vercel.app/veiculo/hb20).
 3. Em **Reservar o veículo**, defina o local, as datas, os horários e a proteção opcional. O resumo mostra o valor total antes da confirmação.
 4. Ao finalizar, a página de confirmação exibe o código da reserva e oferece opções para editar ou cancelar.
 
@@ -22,7 +24,9 @@ npm ci
 npm run dev
 ```
 
-Abra o endereço exibido pelo Vite, normalmente [LocadoraDeVeiculos](https://locadora-de-veiculos-omega.vercel.app/)].
+Abra o endereço exibido pelo Vite, normalmente [http://localhost:5173/](http://localhost:5173/).
+
+Também é possível experimentar a [aplicação publicada na Vercel](https://locadora-de-veiculos-omega.vercel.app/) sem instalar as dependências.
 
 | Comando | Uso |
 | --- | --- |
